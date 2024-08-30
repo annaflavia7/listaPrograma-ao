@@ -1,0 +1,41 @@
+<script>
+    const telefonou = prompt(`Você telefonou para a vítima?`);
+    const local = prompt(`Você esteve no local do crime?`);
+    const mora = prompt(`Você mora perto da vítima?`);
+    const devia = prompt(`Você devia para a vítima?`);
+    const trabalhou = prompt(`Você já trabalhou com a vítima?`);
+
+    let resposta = 0;
+
+    if (telefonou == "Sim"){
+        resposta == resposta++
+    }
+    if (local == "Sim"){
+        resposta == resposta++
+    }
+   if (mora == "Sim"){
+    resposta == resposta++
+   }
+   if (devia == "Sim"){
+    resposta == resposta++
+   }
+   if (trabalhou == "Sim"){
+    resposta == resposta++
+   }
+   
+   if (resposta == 2){
+    alert("Você é um suspeito!")
+   }
+   if (resposta == 3 || resposta == 4){
+    alert("Você é um cúmplice!")
+   }
+   if (resposta == 5){
+    alert("Você é o assassino!")
+
+   }
+   else{
+    alert(`Você é inocente!`);
+   }
+
+
+</script>
