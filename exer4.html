@@ -1,0 +1,17 @@
+<script>
+    let BigBrother = Number(prompt("Insira a nota do Big Bother:"))
+    let littleBrother = Number(prompt("Insira a nota do little brother:"))
+    let FinallittleBrother = Number(prompt("Insira a nova nota do little brother:"))
+
+    if(BigBrother < 0 || BigBrother > 10 && littleBrother < 0 || littleBrother > 10 && FinallittleBrother < 0 || FinallittleBrother > 10){
+        alert(`Coloque outra nota entre 0 e 10`)
+    }
+    else if(FinallittleBrother < 0){
+        alert(`Não houve aumento na nota`)
+    }
+    else{
+        const nota = BigBrother + (0.25 * FinallittleBrother)
+        alert(`O Big Bother teve uma nota nova de ${nota.toFixed(2).replace(".",",")}`)
+    }
+
+</script>
