@@ -1,0 +1,13 @@
+<script>
+    const numero = Number(prompt(`Informe um número`).replace(",", "."));
+
+    if (Number.isInteger (numero)){
+        alert(`Número inteiro`)
+    }
+    else if(!Number.isInteger (numero)){
+        alert(`Número decimal`)
+    }
+    else{
+        alert(`Valor inválido`)
+    }
+</script>

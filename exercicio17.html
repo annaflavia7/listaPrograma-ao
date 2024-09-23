@@ -1,0 +1,24 @@
+<script>
+    const produto = Number(prompt(`Informe o preço do produto`));
+    let preco = 0;
+
+    if (produto <= 280) {
+        preco = (produto * 0.20) + produto;
+        alert(`Valor final: ${preco}`);
+    }
+    else if (produto <= 700) {
+        preco = (produto * 0.15) + produto;
+        alert(`Valor final: ${preco}`);
+    }
+    else if (produto <= 1500) {
+        preco = (produto * 0.10) + produto;
+        alert(`Valor final ${preco}`);
+    }
+    else if (produto > 1500) {
+        preco = (produto * 0.05) + produto;
+        alert(`Valor final: ${preco}`)
+    }
+    else {
+        alert(`Informe números!`)
+    }
+</script>

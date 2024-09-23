@@ -1,0 +1,35 @@
+<script>
+    const hemisferio = prompt("Qual hemisferio vc se localiza? Responda com N-Norte e S-Sul").toUpperCase()
+    const mes = Number(prompt("Informe o mes q vc esta, com numeros, por exemplo 1-janeiro, 2- fevereiro, 3- março..."))
+
+    if (hemisferio == "S") {
+        if (mes == 1 || mes == 2 || mes == 3) {
+            alert(`È verão!`)
+        }
+    }
+    else if (mes == 4 || mes == 5 || mes == 6) {
+        alert(`È outono!`)
+    }
+    else if (mes == 7 || mes == 8 || mes == 9) {
+        alert(`È inverno!`)
+    }
+    else if (mes == 10 || mes == 11 || mes == 12) {
+        alert(`È primavera!`)
+    }
+    else if (hemisferio == "N") {
+        if (mes == 4 || mes == 5 || mes == 6) {
+            alert(`È primavera!`)
+        }
+        else if (mes == 7 || mes == 8 || mes == 9) {
+            alert(`È verão!`)
+        }
+        else if (mes == 10 || mes == 11 || mes == 12) {
+            alert(`È outono!`)
+        }
+        else if (mes == 1 || mes == 2 || mes == 3) {
+            alert(`È inverno!`)
+        }
+    }
+
+
+</script>
